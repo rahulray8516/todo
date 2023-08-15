@@ -1,25 +1,21 @@
+// eslint-disable-next-line no-unused-vars
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>Hi Guys, how are you, I hope you Guys are fine as hell</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org" 
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Please click on this button
+      </h1>
+      <MyButton />
     </div>
   );
+}
+
+function MyButton(){
+  return (
+    <button>I'm a button</button>
+  )
 }
 
 export default App;
