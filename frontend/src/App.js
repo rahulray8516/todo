@@ -1,20 +1,39 @@
 // eslint-disable-next-line no-unused-vars
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Button } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 function App() {
   return (
     <div>
-      <h1>
-        Please click on this button
-      </h1>
-      <MyButton />
+      <ContainerFluidExample/>
     </div>
+  );
+}
+
+
+function ContainerFluidExample() {
+  return (
+    <Container fluid>
+      <Row>
+        <Col>
+        <p>
+          <MyButton/>
+          
+        </p>
+        <MyButton/>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
 function MyButton(){
   return (
-    <button>I'm a button</button>
+    <Button>Click Here !</Button>
   )
 }
 
